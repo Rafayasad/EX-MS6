@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task 04</title>
+</head>
+<body>
+    <h3>Sample form</h3>
+    <form>
+        <fieldset>
+           Number 1:<input type="text" placeholder="enter a number" id="fn" /><br /><br />
+           Number 2:<input type="text" placeholder="enter a number" id="sn" /><br /><br />
+           <input type="button" onclick="mul()" value="multiply" />
+           <input type="button" onclick="div()" value="divide" />
+            <br />
+            <p>the result is: <br />
+            <span id="ans"></span></p>
+        </fieldset>
+    </form>
+    <script>
+        function mul(){
+             num1 = document.getElementById("fn").value;
+             num2 = document.getElementById("sn").value;
+            document.getElementById("ans").innerHTML = num1 * num2;
+        }
+        function div(){
+             num1 = document.getElementById("fn").value;
+             num2 = document.getElementById("sn").value;
+            document.getElementById("ans").innerHTML = num1 / num2;
+        }
+    </script>
+</body>
+</html>
+
