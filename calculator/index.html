@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+        <br>
+
+        <table border="2" bgcolor="#7DCEA0" bordercolor="#000000" align="center" style="width: 260px; height: 60px; background-color: navy;">
+            <td><input type="text" id="input" style="width: 244px; height: 43px;" /></td>
+        </table>
+        <table id="input" border="5" bgcolor="#1B2631" bordercolor="#463232" align="center" style="height: 300px; width: 260px;text-align: center;">
+            <tr>
+            <td class="b" style="color: white;" bgcolor="#000000" onclick="getNumber('AC')">AC</td>
+            <td class="b" style="color: white;" bgcolor="#000000" onclick="getNumber('x^​2')">x^2</td>
+            <td class="b" style="color: white;" bgcolor="#000000" onclick="getNumber('/')">/</td>
+            <td class="b" style="color: white;" bgcolor="#000000" onclick="getNumber('*')">*</td>
+            </tr>
+        
+            <tr>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(7)">7</td>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(8)">8</td>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(9)">9</td>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber('-')">-</td>
+            </tr>
+            <tr>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(4)">4</td>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(5)">5</td>
+                <td class="b" style="width: 62px; color: white;" bgcolor="#616A6B" onclick="getNumber(6)">6</td>
+                <td class="b" style="width: 51px; color: white;" bgcolor="#616A6B" onclick="getNumber('+')">+</td>
+            </tr>
+            <tr>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(1)">1</td>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(2)">2</td>
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber(3)">3</td>
+                <td class="b" style="color: white;" bgcolor="#D35400" rowspan="2"  onclick="getNumber('=')">=</td>
+            </tr>
+            <tr>
+                <td class="b" style="color: white;" bgcolor="#616A6B" colspan="2" onclick="getNumber(0)">0</td class="b">
+                <td class="b" style="color: white;" bgcolor="#616A6B" onclick="getNumber('.')">.</td>
+            </tr>
+            <style>
+            .b:hover
+            {
+                background-color: rgb(61, 61, 59);
+            }
+            </style>
+        </table>
+        
+</body>
+</html>
