@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div id="result"></div>
+<script>
+    localStorage.setItem('myitem','johnn');
+    localStorage.setItem('myitems','asad');
+    var gett = localStorage.getItem('myitem');
+    var getts = localStorage.getItem('myitems');
+    document.getElementById("result").innerHTML = gett;
+    document.getElementById("result").innerHTML = getts;
+    localStorage.clear();
+</script>
+</body>
+</html>

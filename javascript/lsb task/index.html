@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+
+        // function Volume(height, diameter){
+        //     this.height = height;
+        //     this.radius = diameter/2;
+        //     this.result = (Math.PI)*(Math.pow(this.radius,2))*this.height;
+        //     console.log(this.result);
+        // }
+
+
+        // var height1 = prompt("Please enter a value of height");
+        // var diameter1 = prompt("Please enter a value of diameter");
+        
+        // var height2 = prompt("Please enter a value of height");
+        // var diameter2 = prompt("Please enter a value of diameter");
+        
+        // var height3 = prompt("Please enter a value of height");
+        // var diameter3 = prompt("Please enter a value of diameter");
+        
+        // var height4 = prompt("Please enter a value of height");
+        // var diameter4 = prompt("Please enter a value of diameter");
+
+        // var c1Height = new Volume(height1,diameter1);
+        // var c2Height = new Volume(height2,diameter2);
+        // var c3Height = new Volume(height3,diameter3);
+        // var c4Height = new Volume(height4,diameter4);
+       
+
+
+
+        var bookDetails = [
+            {
+                bookname : "harryporter",
+                aurthorname : "Haziq",
+                readingstatus : true,
+            },
+                
+            {
+                bookname : "AL chemist",
+                aurthorname : "Mustafa",
+                readingstatus : false,
+            },
+                
+            {
+                bookname : "The Core",
+                aurthorname : "Rafay",
+                readingstatus : true,
+            },
+        ]
+
+        // if (bookDetails[0].readingstatus === true){
+        //     console.log(bookDetails[0].bookname);
+        //     console.log(bookDetails[0].aurthorname);
+        //     console.log("Already Read");
+        // }
+        // if(bookDetails[1].readingstatus === false){
+        //     console.log(bookDetails[1].bookname);
+        //     console.log(bookDetails[1].aurthorname);
+        //     console.log("You Still Need To Read’ Accordingly !");
+        // }
+        // if(bookDetails[2].readingstatus === false){
+        //     console.log(bookDetails[2].bookname);
+        //     console.log(bookDetails[2].aurthorname);
+        //     console.log("You Still Need To Read’ Accordingly !");
+        // }
+
+        for(var i=0; i< bookDetails.length; i++){
+            if(bookDetails[i].readingstatus == true){
+                console.log(bookDetails[i].bookname);
+                console.log(bookDetails[i].aurthorname);
+                console.log("Already Read"); 
+            }else{
+                console.log(bookDetails[i].bookname);
+                console.log(bookDetails[i].aurthorname);
+                console.log("You still need to read"); 
+            }
+        }
+
+        
+    </script>
+    
+</body>
+</html>
